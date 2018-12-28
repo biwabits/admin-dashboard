@@ -1,0 +1,16 @@
+<nb-card size="xsmall">
+  <nb-card-header>
+    <span>Traffic Consumption</span>
+    <div class="dropdown ghost-dropdown" ngbDropdown>
+      <button type="button" class="btn btn-sm" ngbDropdownToggle [ngClass]="{ 'btn-success': currentTheme == 'default', 'btn-primary': currentTheme != 'default'}">
+        {{ type }}
+      </button>
+      <ul ngbDropdownMenu class="dropdown-menu">
+        <li class="dropdown-item" *ngFor="let t of types" (click)="type = t">{{ t }}</li>
+      </ul>
+    </div>
+  </nb-card-header>
+  <nb-card-body class="p-0">
+    <axl-traffic-chart></axl-traffic-chart>
+  </nb-card-body>
+</nb-card>
