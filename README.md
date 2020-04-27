@@ -1,5 +1,5 @@
 
-# Biwabit Admin template based on Angular 7+, Bootstrap 4.
+# Admin Dashboard Template Based on Angular 7+, Bootstrap 4.
 
 
 <!-- ### With 3 stunning visual themes -->
